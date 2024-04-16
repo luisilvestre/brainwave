@@ -13,7 +13,7 @@ const Benefits = () => {
           className="md:max-w-md lg:max-w-2xl"
           title="Chat Smarter, Not Harder with Brainwave"
         />
-
+        <ClipPath />
         <div className="flex flex-wrap justify-center gap-10 mb-10">
           {benefits.map((item) => (
             <div
@@ -44,7 +44,6 @@ const Benefits = () => {
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
               >
-
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                   {item.imageUrl && (
                     <img
@@ -56,7 +55,6 @@ const Benefits = () => {
                     />
                   )}
                 </div>
-                <ClipPath />
               </div>
             </div>
           ))}
