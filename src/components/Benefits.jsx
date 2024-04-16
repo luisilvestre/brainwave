@@ -44,6 +44,7 @@ const Benefits = () => {
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
               >
+                <ClipPath />
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                   {item.imageUrl && (
                     <img
@@ -56,7 +57,6 @@ const Benefits = () => {
                   )}
                 </div>
               </div>
-              <ClipPath />
             </div>
           ))}
         </div>
